@@ -1,0 +1,78 @@
+
+
+@font-face {
+  font-family: Bilbo;
+}
+
+.title {
+	background-color: grey;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column; 
+    width: 100vw;
+    height: 300vh;
+    background-color: #ffe6ff ;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 20vh;
+    
+}
+
+header  {
+    width: 100vw;
+    height: 15vh;
+    background-color: salmonpink;
+    text-align: center;
+    box-shadow: yellow;
+}
+
+
+.title {
+    text-align: center;
+    border: 1px;
+    height: 10vh;
+    width: 30vw;
+}
+
+
+.description{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.p {
+    width: 170px;
+    height:200px;
+    background-color: black;
+}
+
+/*.divider {
+    text-align: center;
+    height: 70px;
+    width: 100vw;
+    background-color: white;
+}*/
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    width: 70vw;
+    background-color: #FAFAFA ;
+    
+}
+
+footer{
+    text-align: center;
+    height: 30vh;
+    width: 100vw;
+}
