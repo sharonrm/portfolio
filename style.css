@@ -1,41 +1,147 @@
 
 
-@font-face {
-  font-family: Bilbo;
+span {
+top: calc(70% - 21px);
+ left: 0;
+ text-transform: uppercase;
+ text-align: center;
+ font: 200  #{42px}/#{1} 'Dancing Script' ;
+
+ opacity: 0;
+ animation: in 3s ease-out forwards infinite;
+ animation-delay: 3s;
 }
+
+@keyframes in{
+ 0%{
+   letter-spacing: -17px;
+   opacity: 0;
+ }
+ 20%{
+   letter-spacing: 12px;
+   opacity: 1;
+ }
+ 100%{
+   letter-spacing: 12px;
+   opacity: 1;
+ }
+}
+}
+}
+
+footer{
+    text-align: center;
+    height: 30vh;
+    width: 100vw;
+}
+
+.box {
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 20px;
+    line-height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    background-color: #f9d1f9;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 3s;
+    transition: width 2s, height 2s, background-color 2s, transform 3s;
+}
+
+
+.box:hover {
+    background-color: #efdaef;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    50% {box-shadow: 10px 20px 30px black;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px black;}
+}
+
+
+h1 {
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 59px;
+    line-height: 60px;
+}
+
+p {
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 28px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+
+@font-face {
+  font-family: 'Dancing Script', Georgia, Times, serif;;
+}
+
+.image {
+    display: flex-left;
+    height: 200px;
+    width: 200px;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column; 
+}​
 
 .title {
 	background-color: grey;
 }
 
-.container{
+.container {
+    font-family: 'Dancing Script', Georgia, Times, serif;
     display: flex;
     justify-content: space-around;
     align-items:center;
     flex-direction: column; 
     width: 100vw;
-    height: 300vh;
+    height: 200vh;
     background-color: #ffe6ff ;
 }
 
 .container1 {
+    font-family: 'Dancing Script', Georgia, Times, serif;
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    height: 20vh;
-    
+    height: 50vh; 
 }
 
 header  {
     width: 100vw;
-    height: 15vh;
-    background-color: salmonpink;
+    height: 1vh;
+    background-color: white;
     text-align: center;
     box-shadow: yellow;
 }
 
 
 .title {
+    font-family: 'Dancing Script', Georgia, Times, serif;
     text-align: center;
     border: 1px;
     height: 10vh;
@@ -44,9 +150,17 @@ header  {
 
 
 .description{
+    font-family: 'Dancing Script', Georgia, Times, serif;
     margin-left: 50px;
     margin-right: 50px;
     
+}
+
+h3 {
+    font-family: 'Dancing Script', Georgia, Times, serif;
+     font-size: px;
+    line-height: 30px;
+
 }
 .p {
     width: 170px;
@@ -66,13 +180,18 @@ header  {
     align-items: center;
     justify-content: space-around;
     height: 400px;
-    width: 70vw;
+    width: 60vw;
     background-color: #FAFAFA ;
     
 }
 
 footer{
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 20px;
     text-align: center;
     height: 30vh;
     width: 100vw;
 }
+
+
+
